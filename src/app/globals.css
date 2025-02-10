@@ -75,6 +75,12 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
 /* Animações suaves */
 .animate-in {
   animation: animate-in 0.3s ease-in-out;
