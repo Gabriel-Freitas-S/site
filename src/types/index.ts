@@ -1,17 +1,29 @@
-type IconName = "Browser" | "FileTs" | "Code" | "Layout" | "FileCss" | 
-  "BracketsCurly" | "GitBranch" | "Cube" | "CloudArrowUp" | "Gear" | 
-  "Lock" | "TestTube" | "Cpu" | "Wrench"
+export type SkillIconName = 
+  | "React"
+  | "TypeScript"
+  | "JavaScript"
+  | "HTML"
+  | "CSS"
+  | "Tailwind"
+  | "Rust"
+  | "Dart"
+  | "Git"
+  | "Docker"
+  | "Cloud"
+  | "Microservices"
+  | "Tests"
+  | "Security";
 
 export interface Technology {
   name: string;
-  icon: IconName;
+  icon: SkillIconName;
 }
 
 export interface Skill {
   name: string;
   level: "Básico" | "Intermediário" | "Avançado";
   description?: string;
-  icon: IconName;
+  icon: SkillIconName;
 }
 
 export interface SkillCategory {
@@ -28,7 +40,7 @@ export interface Course {
 export interface Certification {
   title: string;
   hours: string;
-  icon: IconName;
+  icon: SkillIconName;
   courses: Course[];
 }
 
@@ -39,5 +51,5 @@ export interface Experience {
   description: string;
   technologies: Technology[];
   achievements: string[];
-  companyIcon?: IconName;
+  companyIcon?: SkillIconName;
 }

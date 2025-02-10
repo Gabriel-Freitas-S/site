@@ -2,14 +2,14 @@
 
 import { useEffect, useState } from "react"
 import { iconMap } from "./icons-map"
+import { type SkillIconName } from "@/types"
 
 interface IconWrapperProps {
-  icon: keyof typeof iconMap
+  icon: SkillIconName
   className?: string
-  weight?: "thin" | "light" | "regular" | "bold" | "fill" | "duotone"
 }
 
-export function IconWrapper({ icon, className, weight = "regular" }: IconWrapperProps) {
+export function IconWrapper({ icon, className = "h-6 w-6" }: IconWrapperProps) {
   const [isMounted, setIsMounted] = useState(false)
   const Icon = iconMap[icon]
 
@@ -23,7 +23,7 @@ export function IconWrapper({ icon, className, weight = "regular" }: IconWrapper
 
   return (
     <div suppressHydrationWarning>
-      <Icon className={className} weight={weight} />
+      <Icon className={className} />
     </div>
   )
 }

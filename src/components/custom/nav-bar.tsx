@@ -1,4 +1,4 @@
- "use client"
+"use client"
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -8,24 +8,29 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { cn } from "@/lib/utils"
-import { ThemeToggle } from "./theme-toggle"
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "./theme-toggle"
+import { cn } from "@/lib/utils"
 
 const routes = [
   { path: "/", label: "Início" },
   { path: "/experience", label: "Experiência" },
   { path: "/certifications", label: "Certificações" },
   { path: "/skills", label: "Habilidades" },
-]
+] as const
 
-interface NavLinkProps {
-  path: string
-  label: string
+type Route = (typeof routes)[number]
+
+interface NavLinkProps extends Pick<Route, 'path' | 'label'> {
   className?: string
   isActive?: boolean
 }
+
+const SOCIAL_LINKS = {
+  github: "https://github.com/Gabriel-Freitas-S",
+  linkedin: "https://www.linkedin.com/in/gabriel-freitas-souza/",
+} as const
 
 const NavLink = ({ path, label, className, isActive }: NavLinkProps) => (
   <Link
@@ -39,6 +44,19 @@ const NavLink = ({ path, label, className, isActive }: NavLinkProps) => (
   >
     {label}
   </Link>
+)
+
+const SocialButton = ({ href, icon: Icon, label }: { 
+  href: string
+  icon: typeof FaGithub | typeof FaLinkedin
+  label: string 
+}) => (
+  <Button variant="ghost" size="icon" asChild>
+    <Link href={href} target="_blank" rel="noopener noreferrer">
+      <Icon className="h-5 w-5" />
+      <span className="sr-only">{label}</span>
+    </Link>
+  </Button>
 )
 
 export function NavBar() {
@@ -60,18 +78,16 @@ export function NavBar() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" asChild>
-            <Link href="https://github.com/Gabriel-Freitas-S" target="_blank">
-              <FaGithub className="h-5 w-5" />
-              <span className="sr-only">GitHub</span>
-            </Link>
-          </Button>
-          <Button variant="ghost" size="icon" asChild>
-            <Link href="https://www.linkedin.com/in/gabriel-freitas-souza/" target="_blank">
-              <FaLinkedin className="h-5 w-5" />
-              <span className="sr-only">LinkedIn</span>
-            </Link>
-          </Button>
+          <SocialButton
+            href={SOCIAL_LINKS.github}
+            icon={FaGithub}
+            label="GitHub"
+          />
+          <SocialButton
+            href={SOCIAL_LINKS.linkedin}
+            icon={FaLinkedin}
+            label="LinkedIn"
+          />
           <ThemeToggle />
         </div>
       </div>

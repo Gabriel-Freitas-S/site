@@ -4,7 +4,7 @@ export const certifications: Certification[] = [
   {
     title: "Linguagem Rust",
     hours: "17h",
-    icon: "Wrench",
+    icon: "Rust",
     courses: [
       {
         name: "Rust: a linguagem de programação performática e segura",
@@ -21,7 +21,7 @@ export const certifications: Certification[] = [
   {
     title: "Engenharia de Software",
     hours: "85h",
-    icon: "Gear",
+    icon: "Microservices",
     courses: [
       {
         name: "Quality Assurance: plano de testes e gestão de bugs",
@@ -43,7 +43,7 @@ export const certifications: Certification[] = [
   {
     title: "TypeScript e JavaScript Avançado",
     hours: "63h",
-    icon: "FileTs",
+    icon: "TypeScript",
     courses: [
       {
         name: "TypeScript Part 1: Evolving Your JavaScript",
@@ -65,7 +65,7 @@ export const certifications: Certification[] = [
   {
     title: "CSS e Design",
     hours: "36h",
-    icon: "Browser",
+    icon: "CSS",
     courses: [
       {
         name: "CSS: Flexbox e layouts responsivos",
@@ -87,7 +87,7 @@ export const certifications: Certification[] = [
   {
     title: "Arquitetura de Computadores",
     hours: "8h",
-    icon: "Cpu",
+    icon: "Cloud",
     courses: [
       {
         name: "Arquitetura de computadores: por trás de como seu programa funciona",

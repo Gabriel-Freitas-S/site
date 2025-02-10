@@ -8,25 +8,25 @@ export const skillCategories: SkillCategory[] = [
         name: "React",
         level: "Avançado",
         description: "Desenvolvimento com JavaScript/TypeScript, Context API, Styled Components",
-        icon: "Browser"
+        icon: "React"
       },
       {
         name: "TypeScript",
         level: "Avançado",
         description: "Tipagem estática, interfaces, generics",
-        icon: "FileTs"
+        icon: "TypeScript"
       },
       {
         name: "HTML/CSS",
         level: "Avançado",
         description: "Flexbox, Grid, Responsividade, Mobile First",
-        icon: "Layout"
+        icon: "HTML"
       },
       {
         name: "Tailwind CSS",
         level: "Avançado",
         description: "Classes utilitárias, customização, responsividade",
-        icon: "FileCss"
+        icon: "Tailwind"
       }
     ]
   },
@@ -37,19 +37,19 @@ export const skillCategories: SkillCategory[] = [
         name: "Rust",
         level: "Intermediário",
         description: "Programação performática e segura, tipos avançados",
-        icon: "BracketsCurly"
+        icon: "Rust"
       },
       {
         name: "JavaScript",
         level: "Avançado",
         description: "ES6+, Assíncrono, DOM, APIs",
-        icon: "Code"
+        icon: "JavaScript"
       },
       {
         name: "Dart",
         level: "Intermediário",
         description: "Orientação a Objetos, Assincronismo, Null Safety",
-        icon: "Code"
+        icon: "Dart"
       }
     ]
   },
@@ -60,19 +60,19 @@ export const skillCategories: SkillCategory[] = [
         name: "Git/GitHub",
         level: "Avançado",
         description: "Controle de versão, colaboração, Pull Requests",
-        icon: "GitBranch"
+        icon: "Git"
       },
       {
         name: "Docker",
         level: "Intermediário",
         description: "Criação e gerenciamento de containers",
-        icon: "Cube"
+        icon: "Docker"
       },
       {
         name: "CI/CD",
         level: "Intermediário",
         description: "Integração e entrega contínua",
-        icon: "CloudArrowUp"
+        icon: "Cloud"
       }
     ]
   },
@@ -83,19 +83,19 @@ export const skillCategories: SkillCategory[] = [
         name: "Microsserviços",
         level: "Intermediário",
         description: "Padrões de projeto, arquitetura distribuída",
-        icon: "Gear"
+        icon: "Microservices"
       },
       {
         name: "Testes",
         level: "Avançado",
         description: "TDD, BDD, E2E, Cypress, Robot Framework",
-        icon: "TestTube"
+        icon: "Tests"
       },
       {
         name: "Segurança",
         level: "Intermediário",
         description: "OWASP Top 10, Security Misconfiguration",
-        icon: "Lock"
+        icon: "Security"
       }
     ]
   }

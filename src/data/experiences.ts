@@ -9,31 +9,31 @@ export const experiences: Experience[] = [
     technologies: [
       {
         name: "TypeScript/React",
-        icon: "Code"
+        icon: "React"
       },
       {
         name: "Node.js",
-        icon: "Browser"
+        icon: "JavaScript"
       },
       {
         name: "Next.js",
-        icon: "Browser"
+        icon: "React"
       },
       {
         name: "Docker",
-        icon: "Cube"
+        icon: "Docker"
       },
       {
         name: "CI/CD",
-        icon: "CloudArrowUp"
+        icon: "Cloud"
       },
       {
         name: "Git",
-        icon: "GitBranch"
+        icon: "Git"
       },
       {
         name: "Testes",
-        icon: "TestTube"
+        icon: "Tests"
       }
     ],
     achievements: [
