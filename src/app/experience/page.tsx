@@ -6,7 +6,7 @@ import { IconWrapper } from "@/components/custom/icon-wrapper"
 export default function ExperiencePage() {
   return (
     <main className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8">Experiência Profissional</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">Experiência Profissional</h1>
       <div className="space-y-8">
         {Array.isArray(experiences) && experiences.map((exp, index) => (
           <Card key={index} className="relative overflow-hidden">
@@ -14,25 +14,25 @@ export default function ExperiencePage() {
             <CardHeader>
               <div className="space-y-1">
                 <CardTitle className="text-2xl">{exp.role}</CardTitle>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex flex-wrap items-center gap-2 text-muted-foreground">
                   <span className="font-medium">{exp.company}</span>
-                  <span>•</span>
-                  <span>{exp.period}</span>
+                  <span className="hidden sm:inline">•</span>
+                  <span className="text-sm sm:text-base">{exp.period}</span>
                 </div>
               </div>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <p className="text-muted-foreground">{exp.description}</p>
+            <CardContent className="space-y-4 sm:space-y-6">
+              <p className="text-muted-foreground whitespace-pre-line text-sm sm:text-base">{exp.description}</p>
               
               {/* Tecnologias */}
-              <div className="space-y-2">
-                <h3 className="font-medium">Tecnologias</h3>
-                <div className="flex flex-wrap gap-2">
+              <div className="space-y-1.5 sm:space-y-2">
+                <h3 className="font-medium text-sm sm:text-base">Tecnologias</h3>
+                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {exp.technologies.map((tech, i) => (
-                    <Badge key={i} variant="secondary" className="flex items-center gap-1">
-                      <IconWrapper 
+                    <Badge key={i} variant="secondary" className="flex items-center gap-1 text-xs sm:text-sm py-1">
+                      <IconWrapper
                         icon={tech.icon}
-                        className="w-4 h-4"
+                        className="w-3 h-3 sm:w-4 sm:h-4"
                       />
                       {tech.name}
                     </Badge>
@@ -41,9 +41,9 @@ export default function ExperiencePage() {
               </div>
 
               {/* Conquistas */}
-              <div className="space-y-2">
-                <h3 className="font-medium">Principais Conquistas</h3>
-                <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+              <div className="space-y-1.5 sm:space-y-2">
+                <h3 className="font-medium text-sm sm:text-base">Principais Conquistas</h3>
+                <ul className="list-disc list-inside space-y-1 text-muted-foreground text-sm sm:text-base">
                   {exp.achievements.map((achievement, i) => (
                     <li key={i}>{achievement}</li>
                   ))}
