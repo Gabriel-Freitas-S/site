@@ -10,7 +10,10 @@ import {
   SiRust,
   SiDart,
   SiGit,
-  SiDocker
+  SiDocker,
+  SiAndroid,
+  SiExpo,
+  SiNodedotjs
 } from 'react-icons/si'
 import { TbBoxMultiple, TbTestPipe } from 'react-icons/tb'
 import { BiCloud } from 'react-icons/bi'
@@ -32,5 +35,8 @@ export const iconMap: Record<SkillIconName, IconType> = {
   Cloud: BiCloud,
   Microservices: TbBoxMultiple,
   Tests: TbTestPipe,
-  Security: MdSecurity
+  Security: MdSecurity,
+  Android: SiAndroid,
+  Expo: SiExpo,
+  Nodejs: SiNodedotjs,
 }

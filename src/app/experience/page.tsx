@@ -63,7 +63,7 @@ export default function ExperiencePage() {
               que demonstram minhas habilidades e interesses em desenvolvimento de software.
               Você pode conferir meus projetos no{" "}
               <a
-                href="https://github.com/gabrielfreitasc"
+                href="https://github.com/Gabriel-Freitas-S/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline font-medium"

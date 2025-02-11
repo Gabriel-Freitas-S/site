@@ -12,7 +12,10 @@ export type SkillIconName =
   | "Cloud"
   | "Microservices"
   | "Tests"
-  | "Security";
+  | "Security"
+  | "Android"
+  | "Expo"
+  | "Nodejs";
 
 export interface Technology {
   name: string;
