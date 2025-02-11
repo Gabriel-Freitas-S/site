@@ -15,7 +15,8 @@ export type SkillIconName =
   | "Security"
   | "Android"
   | "Expo"
-  | "Nodejs";
+  | "Nodejs"
+  | "Figma";
 
 export interface Technology {
   name: string;

@@ -13,7 +13,8 @@ import {
   SiDocker,
   SiAndroid,
   SiExpo,
-  SiNodedotjs
+  SiNodedotjs,
+  SiFigma
 } from 'react-icons/si'
 import { TbBoxMultiple, TbTestPipe } from 'react-icons/tb'
 import { BiCloud } from 'react-icons/bi'
@@ -39,4 +40,5 @@ export const iconMap: Record<SkillIconName, IconType> = {
   Android: SiAndroid,
   Expo: SiExpo,
   Nodejs: SiNodedotjs,
+  Figma: SiFigma
 }

@@ -36,6 +36,10 @@ export const experiences: Experience[] = [
       {
         name: "Testes",
         icon: "Tests"
+      },
+      {
+        name: "Figma",
+        icon: "Figma"
       }
     ],
     achievements: [
