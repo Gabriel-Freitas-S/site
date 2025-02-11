@@ -33,7 +33,6 @@ export default function ExperiencePage() {
                       <IconWrapper 
                         icon={tech.icon}
                         className="w-4 h-4"
-                        weight="duotone"
                       />
                       {tech.name}
                     </Badge>

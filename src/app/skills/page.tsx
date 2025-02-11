@@ -29,7 +29,6 @@ function SkillItem({ skill }: { skill: Skill }) {
           <IconWrapper 
             icon={skill.icon} 
             className="w-5 h-5 text-primary" 
-            weight="duotone"
           />
           <h3 className="font-medium">{skill.name}</h3>
         </div>

@@ -18,7 +18,6 @@ function CertificationCard({ cert, index }: { cert: typeof certifications[0], in
             <IconWrapper 
               icon={cert.icon} 
               className="w-6 h-6 text-primary" 
-              weight="duotone"
             />
             <CardTitle>{cert.title}</CardTitle>
           </div>
