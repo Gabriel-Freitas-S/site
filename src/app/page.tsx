@@ -46,7 +46,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
+          <h1 className="text-3xl font-bold sm:text-5xl md:text-6xl">
             Gabriel Freitas Souza
           </h1>
 

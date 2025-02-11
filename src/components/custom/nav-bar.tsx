@@ -84,7 +84,12 @@ export function NavBar() {
           </NavigationMenu>
         </div>
         <div className="flex md:hidden">
-          <Button variant="ghost" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
+          <Button
+            variant="ghost"
+            onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
+            aria-expanded={isMobileMenuOpen}
+          >
             {isMobileMenuOpen ? (
               <FaTimes className="h-5 w-5" />
             ) : (
