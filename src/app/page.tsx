@@ -37,9 +37,9 @@ export default function Home() {
               <Image
                 src="https://github.com/Gabriel-Freitas-S.png"
                 alt="Foto do Perfil no GitHub"
-                width={128}
-                height={128}
-                className="rounded-full"
+                width={96}
+                height={96}
+                className="rounded-full w-24 h-24 sm:w-32 sm:h-32"
                 priority
                 quality={95}
               />
