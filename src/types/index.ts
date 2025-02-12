@@ -25,13 +25,13 @@ export interface Technology {
 
 export interface Skill {
   name: string;
-  level: "Básico" | "Intermediário" | "Avançado";
   description?: string;
   icon: SkillIconName;
 }
 
 export interface SkillCategory {
   name: string;
+  icon: SkillIconName;
   skills: Skill[];
 }
 
