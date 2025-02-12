@@ -31,7 +31,7 @@ export function CardWithIcon({
               icon={icon} 
               className="w-6 h-6 text-primary" 
             />
-            <CardTitle>{title}</CardTitle>
+            <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight">{title}</h2>
           </div>
           {headerAction}
         </div>

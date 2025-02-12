@@ -12,7 +12,7 @@ function ExperienceCard({ exp, index }: { exp: typeof experiences[0], index: num
       <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
       <CardHeader>
         <div className="space-y-1">
-          <CardTitle className="text-2xl">{exp.role}</CardTitle>
+          <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight">{exp.role}</h2>
           <div className="flex flex-wrap items-center gap-2 text-muted-foreground">
             <span className="font-medium">{exp.company}</span>
             <span className="hidden sm:inline">•</span>
