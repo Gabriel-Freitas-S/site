@@ -61,28 +61,6 @@ export default function ExperiencePage() {
           </Card>
         ))}
       </div>
-
-      {/* Nota sobre portfólio */}
-      <div className="mt-12 text-center">
-        <Card>
-          <CardContent className="pt-6">
-            <p className="text-muted-foreground">
-              Além das experiências profissionais, mantenho um portfólio ativo de projetos pessoais
-              que demonstram minhas habilidades e interesses em desenvolvimento de software.
-              Você pode conferir meus projetos no{" "}
-              <a
-                href="https://github.com/Gabriel-Freitas-S/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline font-medium"
-              >
-                GitHub
-              </a>
-              .
-            </p>
-          </CardContent>
-        </Card>
-      </div>
     </main>
   )
 }
