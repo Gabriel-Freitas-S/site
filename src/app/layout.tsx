@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 export const metadata: Metadata = {
   metadataBase: new URL('https://gabriel-freitas-s.vercel.app'),
   icons: {
-    icon: '/site/favicon.ico',
-    shortcut: '/site/favicon.ico',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
   },
   title: {
     template: "%s | Gabriel - Desenvolvedor Full Stack",
