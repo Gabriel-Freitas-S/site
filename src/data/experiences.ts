@@ -51,5 +51,36 @@ export const experiences: Experience[] = [
       "Colaboração com diferentes equipes e stakeholders",
       "Visão abrangente do ciclo de vida de um projeto de software"
     ]
+  },
+  {
+    role: "Auxiliar de escritório geral",
+    company: "IRMANDADE DA SANTA CASA DE MISERICORDIA DE VITORIA",
+    period: "mai de 2023 - out de 2023",
+    description: `Atuei como auxiliar administrativo na Santa Casa de Vitória Unidade Pró-Matre, onde minhas responsabilidades incluíam a organização de arquivos, o apoio às rotinas administrativas e a colaboração em equipe.
+                  Esta experiência foi fundamental para o desenvolvimento de habilidades de organização e trabalho em equipe, além de proporcionar uma visão do funcionamento de uma instituição de saúde.`,
+    technologies: [],
+    achievements: [
+      "Organização de arquivos administrativos",
+      "Apoio às rotinas administrativas diárias",
+      "Colaboração em equipe para otimização de processos",
+      "Desenvolvimento de habilidades organizacionais e de trabalho em equipe",
+      "Experiência em ambiente hospitalar, adquirindo visão sobre o funcionamento de uma instituição de saúde"
+    ]
+  },
+  {
+    role: "Assistente administrativo",
+    company: "Correios",
+    period: "fev de 2019 - fev de 2020",
+    description: `Durante minha experiência como jovem aprendiz nos Correios, iniciei minha formação com o curso de Assistente de Logística no SENAI, onde adquiri conhecimentos teóricos fundamentais sobre a área.
+                  Após essa etapa, fui designado para uma agência dos Correios, onde pude aplicar na prática o que aprendi, sendo responsável pela separação de encomendas e correspondências de acordo com os CEPs.
+                  Essa vivência me proporcionou uma visão abrangente do setor logístico e contribuiu para o desenvolvimento de habilidades como organização e atenção aos detalhes.
+    `,
+    technologies: [],
+    achievements: [
+      "Curso de Assistente de Logística no SENAI",
+      "Aplicação prática de conhecimentos logísticos nos Correios",
+      "Desenvolvimento de habilidades em organização e atenção aos detalhes",
+      "Visão do setor logístico e de distribuição de encomendas"
+    ]
   }
 ]

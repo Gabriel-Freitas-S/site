@@ -22,33 +22,41 @@ export default function ExperiencePage() {
               </div>
             </CardHeader>
             <CardContent className="space-y-4 sm:space-y-6">
-              <p className="text-muted-foreground whitespace-pre-line text-sm sm:text-base">{exp.description}</p>
+              {exp.description && (
+                <p className="text-muted-foreground whitespace-pre-line text-sm sm:text-base">
+                  {exp.description}
+                </p>
+              )}
               
-              {/* Tecnologias */}
-              <div className="space-y-1.5 sm:space-y-2">
-                <h3 className="font-medium text-sm sm:text-base">Tecnologias</h3>
-                <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                  {exp.technologies.map((tech, i) => (
-                    <Badge key={i} variant="secondary" className="flex items-center gap-1 text-xs sm:text-sm py-1">
-                      <IconWrapper
-                        icon={tech.icon}
-                        className="w-3 h-3 sm:w-4 sm:h-4"
-                      />
-                      {tech.name}
-                    </Badge>
-                  ))}
+              {/* Tecnologias - Só mostra se houver tecnologias */}
+              {exp.technologies && exp.technologies.length > 0 && (
+                <div className="space-y-1.5 sm:space-y-2">
+                  <h3 className="font-medium text-sm sm:text-base">Tecnologias</h3>
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                    {exp.technologies.map((tech, i) => (
+                      <Badge key={i} variant="secondary" className="flex items-center gap-1 text-xs sm:text-sm py-1">
+                        <IconWrapper
+                          icon={tech.icon}
+                          className="w-3 h-3 sm:w-4 sm:h-4"
+                        />
+                        {tech.name}
+                      </Badge>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
-              {/* Conquistas */}
-              <div className="space-y-1.5 sm:space-y-2">
-                <h3 className="font-medium text-sm sm:text-base">Principais Conquistas</h3>
-                <ul className="list-disc list-inside space-y-1 text-muted-foreground text-sm sm:text-base">
-                  {exp.achievements.map((achievement, i) => (
-                    <li key={i}>{achievement}</li>
-                  ))}
-                </ul>
-              </div>
+              {/* Conquistas - Só mostra se houver conquistas */}
+              {exp.achievements && exp.achievements.length > 0 && (
+                <div className="space-y-1.5 sm:space-y-2">
+                  <h3 className="font-medium text-sm sm:text-base">Principais Conquistas</h3>
+                  <ul className="list-disc list-inside space-y-1 text-muted-foreground text-sm sm:text-base">
+                    {exp.achievements.map((achievement, i) => (
+                      <li key={i}>{achievement}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </CardContent>
           </Card>
         ))}
