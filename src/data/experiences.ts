@@ -53,7 +53,7 @@ export const experiences: Experience[] = [
     ]
   },
   {
-    role: "Auxiliar de escritório geral",
+    role: "Auxiliar de Escritório Geral",
     company: "IRMANDADE DA SANTA CASA DE MISERICORDIA DE VITORIA",
     period: "mai de 2023 - out de 2023",
     description: `Atuei como auxiliar administrativo na Santa Casa de Vitória Unidade Pró-Matre, onde minhas responsabilidades incluíam a organização de arquivos, o apoio às rotinas administrativas e a colaboração em equipe.
@@ -68,7 +68,7 @@ export const experiences: Experience[] = [
     ]
   },
   {
-    role: "Assistente administrativo",
+    role: "Assistente Administrativo",
     company: "Correios",
     period: "fev de 2019 - fev de 2020",
     description: `Durante minha experiência como jovem aprendiz nos Correios, iniciei minha formação com o curso de Assistente de Logística no SENAI, onde adquiri conhecimentos teóricos fundamentais sobre a área.
